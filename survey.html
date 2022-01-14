@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <title>Survey form</title>
+</head>
+<body>
+   <div id="container">
+    <header class="main-header">
+         <h1 id="title">freecodecamp survey form</h1>
+        <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+    </header>
+    <form id="survey-form">
+   <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+   </div>
+   <div class="form-group">
+    <label for="email">Email</label>
+    <input type="text" name="Email" id="Email" placeholder="Enter your Email" required>
+     </div>
+     <div class="form-group">
+        <label for="Age">Age<span>(optional)</span></label>
+        <input type="text" name="Age" id="Age" placeholder="Enter your Age">
+         </div>
+
+         <div class="form-group">
+         <label for="role-select">Which option best describes your current role?</label>
+
+                 <select name="current role" id="current-role">
+                    <option value="">select current role</option>
+                      <option value="student">student</option>
+                       <option value="Full Time Job">Full Time Job</option>
+                       <option value="Full Time Learner">Full Time Learner</option>
+                        <option value="Prefer not to say">Prefer not to say</option>
+                         <option value="other">other</option>
+                    </select>
+                 </div>
+
+
+             <!-- <div class="form-group">
+                <label for="radio-selector">Would you recommend freeCodeCamp to a friend?</label>
+                <label for="radio">
+                <input type="radio" name="Definitely" id="Definitely">Definitely
+                </label>
+                <input type="radio" name="May be" id="May be">May be<br>
+                <input type="radio" name="Not sure" id="Not sure">Not sure<br>
+                 </div> -->
+                  <div class="form-group">
+                 <p>Would you recommend freeCodeCamp to a friend?</p>
+
+                 <div>
+                   <input type="radio" id="Definitely" name="Definitely" value="Definitely"
+                          checked>
+                   <label for="Definitely">Definitely</label>
+                 </div>
+                 
+                 <div>
+                   <input type="radio" id="May be" name="May be" value="May be">
+                   <label for="May be">May be</label>
+                 </div>
+                 
+                 <div>
+                   <input type="radio" id="Not sure" name="Not sure" value="Not sure">
+                   <label for="Not sure">Not sure</label>
+                 </div>
+                 
+                  </div>
+
+
+                 <div class="form-group">
+                    <label for="option-select">What is your favorite feature of freeCodeCamp?</label>
+           
+                            <select name="current role" id="favourite-selector">
+                               <option value="">select an option</option>
+                                 <option value="challenges">challenges</option>
+                                  <option value="project">projects</option>
+                                  <option value="community">community</option>
+                                   <option value="open source">open source</option>
+                               </select>
+                            </div>
+
+                     <div class="form-group">
+                        <label for="radio-selector">What would you like to see improved?<span>(Check all that apply)</span></label>
+                        <input type="checkbox" name="" id="">Front-end projects<br>
+                        <input type="checkbox" name="" id="">Front-end projects<br>
+                        <input type="checkbox" name="" id="">Data Visualization<br>
+                        <input type="checkbox" name="" id="">Challenges<br>
+                        <input type="checkbox" name="" id="">Open Source Community<br>
+                        <input type="checkbox" name="" id="">Gitter help rooms<br>
+                        <input type="checkbox" name="" id="">Videos<br>
+                        <input type="checkbox" name="" id="">City meetup<br>
+                        <input type="checkbox" name="" id="">wiki<br>
+                        <input type="checkbox" name="" id="">Forum<br>
+                        <input type="checkbox" name="" id="">Additional Courses<br>
+                         </div>
+
+                              <div class="form-group">
+                             <label for="comments">Any comments or suggestions?</label>
+
+                             <textarea id="comments" name="comments"
+                                       >
+                                       Enter your comments here
+                             </textarea>
+                             </div>
+
+
+                        
+                                <input type="submit" value="Submit" id="submit"></button>
+                              
+    
+                             
+    </form>
+    <p id="creator">This page is created and designed by<strong> ANIKET BOSE </strong></p> 
+   </div>
+</body>
+</html>
